@@ -109,7 +109,7 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(book4ulogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 91, -1, 184));
 
         backgroundlmage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/lgoin background 5.jpg"))); // NOI18N
-        getContentPane().add(backgroundlmage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 680, 400));
+        getContentPane().add(backgroundlmage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 680, 430));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -119,7 +119,8 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_emailTextActionPerformed
 
     private void signupButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signupButtonActionPerformed
-        // TODO add your handling code here:
+        new SignUp().setVisible(true);  // Open SignUp page
+this.dispose();                 // TODO add your handling code here:
     }//GEN-LAST:event_signupButtonActionPerformed
 
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
@@ -148,6 +149,7 @@ public class Login extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
