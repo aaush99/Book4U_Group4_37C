@@ -26,21 +26,213 @@ public class SignUp extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        usernameLabel = new javax.swing.JLabel();
+        usernameText = new javax.swing.JTextField();
+        emailText = new javax.swing.JTextField();
+        emailLabel = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        fullnameLabel = new javax.swing.JLabel();
+        fullnameText = new javax.swing.JTextField();
+        phonenoLabel = new javax.swing.JLabel();
+        phonenoText = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        book4ulogo = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(680, 410));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        usernameLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        usernameLabel.setText("Username");
+        getContentPane().add(usernameLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, -1, -1));
+
+        usernameText.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        usernameText.setText("Enter the Name");
+        usernameText.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                usernameTextFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                usernameTextFocusLost(evt);
+            }
+        });
+        getContentPane().add(usernameText, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 100, 280, -1));
+
+        emailText.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        emailText.setText("Enter the Email");
+        emailText.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                emailTextFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                emailTextFocusLost(evt);
+            }
+        });
+        emailText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                emailTextActionPerformed(evt);
+            }
+        });
+        getContentPane().add(emailText, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, 280, -1));
+
+        emailLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        emailLabel.setText("Email");
+        getContentPane().add(emailLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 130, 62, -1));
+
+        jTextField3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, 280, -1));
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel3.setText("Password");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 180, -1, -1));
+
+        fullnameLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        fullnameLabel.setText("Full name");
+        getContentPane().add(fullnameLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 230, 70, -1));
+
+        fullnameText.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        fullnameText.setText("Enter the Full name");
+        fullnameText.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                fullnameTextFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                fullnameTextFocusLost(evt);
+            }
+        });
+        fullnameText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fullnameTextActionPerformed(evt);
+            }
+        });
+        getContentPane().add(fullnameText, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 250, 280, -1));
+
+        phonenoLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        phonenoLabel.setText("Phone no.");
+        getContentPane().add(phonenoLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 280, -1, -1));
+
+        phonenoText.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        phonenoText.setText("Enter the Phone no.");
+        phonenoText.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                phonenoTextFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                phonenoTextFocusLost(evt);
+            }
+        });
+        phonenoText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                phonenoTextActionPerformed(evt);
+            }
+        });
+        getContentPane().add(phonenoText, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 300, 280, -1));
+
+        jButton1.setBackground(new java.awt.Color(255, 102, 0));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButton1.setText("Sign Up");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 340, -1, -1));
+
+        jLabel6.setText("Sign Up");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
+
+        jLabel8.setBackground(new java.awt.Color(255, 102, 0));
+        jLabel8.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel8.setText("Book4U");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, -1, -1));
+
+        book4ulogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/86e9c178dfec4dcd38c958a24734312006b04bf2.jpg"))); // NOI18N
+        getContentPane().add(book4ulogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, -1, 184));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/book.jpg"))); // NOI18N
+        jLabel7.setText("jLabel7");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -280, 770, 960));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void emailTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_emailTextActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void phonenoTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_phonenoTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_phonenoTextActionPerformed
+
+    private void fullnameTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fullnameTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fullnameTextActionPerformed
+
+    private void usernameTextFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_usernameTextFocusGained
+        if(usernameText.getText().equals("Enter the Name")){
+        usernameText.setText("");
+    }// TODO add your handling code here:
+    }//GEN-LAST:event_usernameTextFocusGained
+
+    private void usernameTextFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_usernameTextFocusLost
+       if(usernameText.getText(). isEmpty()){
+            usernameText.setText("Enter the Name");
+        } // TODO add your handling code here:
+    }//GEN-LAST:event_usernameTextFocusLost
+
+    private void emailTextFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_emailTextFocusGained
+         if(emailText.getText().equals("Enter the Email")){
+        emailText.setText("");
+    }// TODO add your handling code here:
+    }//GEN-LAST:event_emailTextFocusGained
+
+    private void emailTextFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_emailTextFocusLost
+        if(emailText.getText(). isEmpty()){
+            emailText.setText("Enter the Email");
+        } // TODO add your handling code here:
+    }//GEN-LAST:event_emailTextFocusLost
+
+    private void fullnameTextFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_fullnameTextFocusGained
+         if(fullnameText.getText().equals("Enter the Full name")){
+        fullnameText.setText("");
+    }// TODO add your handling code here:
+    }//GEN-LAST:event_fullnameTextFocusGained
+
+    private void fullnameTextFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_fullnameTextFocusLost
+       if(fullnameText.getText(). isEmpty()){
+            fullnameText.setText("Enter the Full name");
+        } // TODO add your handling code here:
+    }//GEN-LAST:event_fullnameTextFocusLost
+
+    private void phonenoTextFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_phonenoTextFocusGained
+        if(phonenoText.getText().equals("Enter the Phone no.")){
+        phonenoText.setText("");
+    }// TODO add your handling code here:
+    }//GEN-LAST:event_phonenoTextFocusGained
+
+    private void phonenoTextFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_phonenoTextFocusLost
+        if(phonenoText.getText(). isEmpty()){
+            phonenoText.setText("Enter the Phone no.");
+        }// TODO add your handling code here:
+    }//GEN-LAST:event_phonenoTextFocusLost
 
     /**
      * @param args the command line arguments
@@ -78,5 +270,20 @@ public class SignUp extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel book4ulogo;
+    private javax.swing.JLabel emailLabel;
+    private javax.swing.JTextField emailText;
+    private javax.swing.JLabel fullnameLabel;
+    private javax.swing.JTextField fullnameText;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JLabel phonenoLabel;
+    private javax.swing.JTextField phonenoText;
+    private javax.swing.JLabel usernameLabel;
+    private javax.swing.JTextField usernameText;
     // End of variables declaration//GEN-END:variables
 }
