@@ -43,21 +43,21 @@ public class Login extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Book4uLabel.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        Book4uLabel.setFont(new java.awt.Font("Arial", 1, 30)); // NOI18N
         Book4uLabel.setForeground(new java.awt.Color(255, 102, 0));
         Book4uLabel.setText("Book4U");
-        getContentPane().add(Book4uLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 39, 155, 40));
+        getContentPane().add(Book4uLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 155, 40));
 
         loginLabel.setText("Login");
         getContentPane().add(loginLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 0, -1, -1));
 
-        emailLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        emailLabel.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         emailLabel.setText("Email");
-        getContentPane().add(emailLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(248, 91, 51, -1));
+        getContentPane().add(emailLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, 51, -1));
 
-        passwordLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        passwordLabel.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         passwordLabel.setText("Password");
-        getContentPane().add(passwordLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(248, 167, -1, -1));
+        getContentPane().add(passwordLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 180, -1, -1));
 
         emailText.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         emailText.setText("Enter your email");
@@ -74,7 +74,7 @@ public class Login extends javax.swing.JFrame {
                 emailTextActionPerformed(evt);
             }
         });
-        getContentPane().add(emailText, new org.netbeans.lib.awtextra.AbsoluteConstraints(248, 123, 310, -1));
+        getContentPane().add(emailText, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, 310, -1));
 
         passwordField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         getContentPane().add(passwordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(248, 205, 310, -1));
@@ -86,7 +86,7 @@ public class Login extends javax.swing.JFrame {
                 signupButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(signupButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 270, 130, -1));
+        getContentPane().add(signupButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 270, 130, 30));
 
         loginButton.setBackground(new java.awt.Color(255, 102, 0));
         loginButton.setText("Login");
@@ -95,21 +95,23 @@ public class Login extends javax.swing.JFrame {
                 loginButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(423, 270, 130, -1));
+        getContentPane().add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(423, 270, 130, 30));
 
+        forgotpasswordLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         forgotpasswordLabel.setText("Forgot Password?");
         forgotpasswordLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 forgotpasswordLabelMouseClicked(evt);
             }
         });
-        getContentPane().add(forgotpasswordLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 240, -1, -1));
+        getContentPane().add(forgotpasswordLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 240, -1, -1));
 
         book4ulogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/86e9c178dfec4dcd38c958a24734312006b04bf2.jpg"))); // NOI18N
-        getContentPane().add(book4ulogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 91, -1, 184));
+        getContentPane().add(book4ulogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, 184));
 
+        backgroundlmage.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         backgroundlmage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/lgoin background 5.jpg"))); // NOI18N
-        getContentPane().add(backgroundlmage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 680, 430));
+        getContentPane().add(backgroundlmage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 680, 460));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
