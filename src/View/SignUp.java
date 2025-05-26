@@ -26,11 +26,13 @@ public class SignUp extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+        backgroundlmage = new javax.swing.JLabel();
         usernameLabel = new javax.swing.JLabel();
         usernameText = new javax.swing.JTextField();
         emailText = new javax.swing.JTextField();
         emailLabel = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         fullnameLabel = new javax.swing.JLabel();
         fullnameText = new javax.swing.JTextField();
@@ -40,10 +42,25 @@ public class SignUp extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         book4ulogo = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        backgroundlmage = new javax.swing.JLabel();
+        jPasswordField1 = new javax.swing.JPasswordField();
+        jLabel2 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
+        jLabel1.setMaximumSize(new java.awt.Dimension(680, 460));
+        jLabel1.setMinimumSize(new java.awt.Dimension(680, 460));
+        jLabel1.setPreferredSize(new java.awt.Dimension(680, 460));
+
+        jTextField3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+
+        backgroundlmage.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        backgroundlmage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/lgoin background 5.jpg"))); // NOI18N
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(680, 544));
         setMinimumSize(new java.awt.Dimension(680, 544));
         setPreferredSize(new java.awt.Dimension(680, 544));
@@ -85,14 +102,6 @@ public class SignUp extends javax.swing.JFrame {
         emailLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         emailLabel.setText("Email");
         getContentPane().add(emailLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 130, 62, -1));
-
-        jTextField3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, 280, -1));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel3.setText("Password");
@@ -154,34 +163,27 @@ public class SignUp extends javax.swing.JFrame {
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
 
         jLabel8.setBackground(new java.awt.Color(255, 102, 0));
-        jLabel8.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Arial", 1, 28)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 102, 0));
         jLabel8.setText("Book4U");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, -1, -1));
 
         book4ulogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/86e9c178dfec4dcd38c958a24734312006b04bf2.jpg"))); // NOI18N
-        getContentPane().add(book4ulogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 220, 180));
+        getContentPane().add(book4ulogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 220, 180));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
-        jLabel1.setMaximumSize(new java.awt.Dimension(680, 460));
-        jLabel1.setMinimumSize(new java.awt.Dimension(680, 460));
-        jLabel1.setPreferredSize(new java.awt.Dimension(680, 460));
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-320, 0, 710, 80));
+        jPasswordField1.setText("jPasswordField1");
+        getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, 280, -1));
 
-        backgroundlmage.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        backgroundlmage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/lgoin background 5.jpg"))); // NOI18N
-        getContentPane().add(backgroundlmage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 520));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/6dea8d36-0f19-43dd-8b4e-2e9b2388524a.jpg"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-300, -170, 970, 680));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void emailTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailTextActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_emailTextActionPerformed
-
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
@@ -243,6 +245,10 @@ public class SignUp extends javax.swing.JFrame {
         }// TODO add your handling code here:
     }//GEN-LAST:event_phonenoTextFocusLost
 
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -287,9 +293,11 @@ public class SignUp extends javax.swing.JFrame {
     private javax.swing.JTextField fullnameText;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JLabel phonenoLabel;
     private javax.swing.JTextField phonenoText;

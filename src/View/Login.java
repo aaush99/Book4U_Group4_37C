@@ -47,8 +47,6 @@ public class Login extends javax.swing.JFrame {
         Book4uLabel.setForeground(new java.awt.Color(255, 102, 0));
         Book4uLabel.setText("Book4U");
         getContentPane().add(Book4uLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 155, 40));
-
-        loginLabel.setText("Login");
         getContentPane().add(loginLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 0, -1, -1));
 
         emailLabel.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -111,9 +109,10 @@ public class Login extends javax.swing.JFrame {
 
         backgroundlmage.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         backgroundlmage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/lgoin background 5.jpg"))); // NOI18N
-        getContentPane().add(backgroundlmage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 680, 460));
+        getContentPane().add(backgroundlmage, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 680, 480));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void emailTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailTextActionPerformed
