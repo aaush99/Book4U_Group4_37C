@@ -4,6 +4,8 @@
  */
 package View;
 
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author L O Q
@@ -330,4 +332,19 @@ public class HelpandSupport extends javax.swing.JFrame {
     private javax.swing.JButton reportonissue;
     private javax.swing.JButton settings;
     // End of variables declaration//GEN-END:variables
+
+    public void addcartListener(ActionListener listener){
+        cart.addActionListener(listener);
+    }
+    public void addcontactListener(ActionListener listener){
+        contactsupport.addActionListener(listener);
+    }
+    public void addfaqListener(ActionListener listener){
+        faq.addActionListener(listener);
+    }
+    public void addhelpandsupportListener(ActionListener listener){
+        helpandsupport.addActionListener(listener);
+    }
+    
 }
+
