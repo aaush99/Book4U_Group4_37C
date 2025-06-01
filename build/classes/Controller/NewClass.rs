@@ -1,0 +1,1 @@
+Controller.Database.NewClass
