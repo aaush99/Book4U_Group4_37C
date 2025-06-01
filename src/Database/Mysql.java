@@ -14,8 +14,8 @@ public abstract class Mysql implements Database {
     public Connection openConnection() {
         try{
             String username = "root";
-            String password = "killerdragon@731";
-            String database = "bhatbhateni";
+            String password = "";
+            String database = "BooK4U";
             Connection connection;
             connection = DriverManager.getConnection(
                     
